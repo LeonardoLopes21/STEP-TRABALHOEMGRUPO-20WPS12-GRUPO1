@@ -1,4 +1,5 @@
 import { React, useEffect, useState } from 'react';
+import styles from './Produtos.module.css'
 
 function Produtos() {
   const [carrinho, setCarrinho] = useState([]);
@@ -82,13 +83,33 @@ function Produtos() {
   return (
     <div className="page">
       <h1>Nossos Produtos</h1>
-      <p>Lista de produtos.</p>
-      <div id="bb" className="card">
-        <h2>Bloodborne</h2>
-        <p><strong>Categoria:</strong> Soulslike</p>
-        <p><strong>Preço:</strong> R$250</p>
-        <p><strong>Plataforma:</strong> PS4</p>
-        <button onClick={() => insertIntoCart("50e9")}>Adicionar ao Carrinho</button>
+      
+      <div className={styles['card-container']}>
+        <div className={styles.card}>
+          <h2>Bloodborne</h2>
+          <p><strong>Categoria:</strong> Soulslike</p>
+          <p><strong>Preço:</strong> R$250</p>
+          <p><strong>Plataforma:</strong> PS4</p>
+          <button className={styles.button} onClick={() => insertIntoCart("50e9")}>Adicionar ao Carrinho</button>
+        </div>
+
+        <div className={styles.card}>
+          <h2>The Witcher 3</h2>
+          <p><strong>Categoria:</strong> RPG</p>
+          <p><strong>Preço:</strong> R$300</p>
+          <p><strong>Plataforma:</strong> PC</p>
+          <button className={styles.button} onClick={() => insertIntoCart("60a9")}>Adicionar ao Carrinho</button>
+        </div>
+
+        <div className={styles.card}>
+          <h2>Spider-Man</h2>
+          <p><strong>Categoria:</strong> Ação</p>
+          <p><strong>Preço:</strong> R$350</p>
+          <p><strong>Plataforma:</strong> PS4</p>
+          <button className={styles.button} onClick={() => insertIntoCart("70b9")}>Adicionar ao Carrinho</button>
+        </div>
+
+        
       </div>
     </div>
   );
