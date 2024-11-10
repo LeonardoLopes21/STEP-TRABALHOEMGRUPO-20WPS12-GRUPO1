@@ -6,7 +6,7 @@ function Produtos() {
 
   async function fetchGames() {
     try {
-      const response = await fetch("http://localhost:3000/games");
+      const response = await fetch("http://localhost:4000/games");
       if (response.ok) {
         const data = await response.json();
         setGamesDB(data);
@@ -22,7 +22,7 @@ function Produtos() {
 
   async function fetchCart() {
     try {
-      const response = await fetch("http://localhost:3000/carrinho");
+      const response = await fetch("http://localhost:4000/carrinho");
       if (response.ok) {
         const data = await response.json();
         setCarrinho(data);
@@ -44,7 +44,7 @@ function Produtos() {
 
   async function addAnotherOne(id, data) {
     try {
-      const response = await fetch(`http://localhost:3000/carrinho/${id}`, {
+      const response = await fetch(`http://localhost:4000/carrinho/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
@@ -58,7 +58,7 @@ function Produtos() {
   async function addFirst(id) {
     const gamedata = handleGameData(id);
     try {
-      await fetch('http://localhost:3000/carrinho', {
+      await fetch('http://localhost:4000/carrinho', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(gamedata),
