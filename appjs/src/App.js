@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Produtos from './pages/Produtos';
 import Carrinho from './pages/Carrinho';
 import './App.css';
-// teste
+
 function App() {
   return (
     <Router>
