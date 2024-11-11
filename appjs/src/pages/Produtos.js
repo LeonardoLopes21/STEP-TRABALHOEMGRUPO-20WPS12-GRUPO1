@@ -1,4 +1,6 @@
+// Produtos.js
 import { React, useEffect, useState } from 'react';
+
 import styles from './Produtos.module.css'
 
 function Produtos() {
@@ -45,7 +47,7 @@ function Produtos() {
 
   async function addAnotherOne(id, data) {
     try {
-      const response = await fetch(`http://localhost:4000/carrinho/${id}`, {
+      await fetch(`http://localhost:4000/carrinho/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
@@ -58,11 +60,17 @@ function Produtos() {
 
   async function addFirst(id) {
     const gamedata = handleGameData(id);
+    const itemToAdd = {
+      id: gamedata.id,
+      nome: gamedata.nome,
+      preco: gamedata.preco,
+      qtd: 1
+    };
     try {
       await fetch('http://localhost:4000/carrinho', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(gamedata),
+        body: JSON.stringify(itemToAdd),
       });
       fetchCart();
     } catch (error) {
@@ -73,7 +81,8 @@ function Produtos() {
   async function insertIntoCart(id) {
     const existingItem = carrinho.find(item => item.id === id);
     if (existingItem) {
-      existingItem.qtd = Number(existingItem.qtd) + 1;
+      existingItem.qtd += 1;
+      existingItem.totalValue = existingItem.price * existingItem.qtd;
       await addAnotherOne(id, existingItem);
     } else {
       addFirst(id);
