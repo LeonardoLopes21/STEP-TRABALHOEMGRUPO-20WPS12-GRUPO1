@@ -3,19 +3,38 @@
     {
       "id": "50e9",
       "nome": "Bloodborne",
-      "preco": "200",
-      "categoria": "Souslike",
+      "preco": 200,
+      "categoria": "Soulslike",
+      "plataforma": "PS4"
+    },
+    {
+      "id": "60a9",
+      "nome": "The Witcher 3",
+      "preco": 300,
+      "categoria": "RPG",
+      "plataforma": "PC"
+    },
+    {
+      "id": "70b9",
+      "nome": "Spider-Man",
+      "preco": 350,
+      "categoria": "Ação",
       "plataforma": "PS4"
     }
   ],
   "carrinho": [
     {
+      "id": "60a9",
+      "nome": "The Witcher 3",
+      "preco": 300,
+      "qtd": 4,
+      "totalValue": null
+    },
+    {
       "id": "50e9",
       "nome": "Bloodborne",
-      "preco": "200",
-      "categoria": "Souslike",
-      "plataforma": "PS4",
-      "qtd": 13
+      "preco": 200,
+      "qtd": 1
     }
   ]
 }
