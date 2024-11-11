@@ -1,6 +1,7 @@
 // Produtos.js
 import { React, useEffect, useState } from 'react';
-import styles from './Produtos.module.css';
+
+import styles from './Produtos.module.css'
 
 function Produtos() {
   const [carrinho, setCarrinho] = useState([]);
