@@ -1,0 +1,30 @@
+.textointroducao{
+    width: 45%;
+    text-align: justify;
+    margin-left: 30px;
+}
+
+.imagemintroducao1{
+    width: 45%;
+    height: 300px;
+    position: absolute;
+    right: 20px;
+    top: 140px;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+.listaPlataformas{
+    list-style-position: inside;
+    background-color: #7ab2d3;
+}
+
+.imagemintroducao2{
+    width: 45%;
+    height: 270px;
+    position: absolute;
+    right: 20px;
+    top: 760px;
+    margin-right: 30px;
+    border-radius: 10px;
+}
