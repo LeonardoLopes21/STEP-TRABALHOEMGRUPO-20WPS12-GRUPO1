@@ -48,6 +48,8 @@ function Home() {
 
         <br/>
 
+        <div style={{marginBottom: '200px'}}>
+
         <h4 className={styles.textointroducao}>
           Nosso Objetivo:
         </h4>
@@ -69,6 +71,8 @@ function Home() {
         </div>
 
         {/* colocar alguma igmagem de supermercado ou alguma historia */}
+
+      </div>
 
       </div>
     );
