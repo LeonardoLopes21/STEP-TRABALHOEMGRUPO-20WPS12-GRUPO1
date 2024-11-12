@@ -22,19 +22,5 @@
       "plataforma": "PS4"
     }
   ],
-  "carrinho": [
-    {
-      "id": "60a9",
-      "nome": "The Witcher 3",
-      "preco": 300,
-      "qtd": 4,
-      "totalValue": null
-    },
-    {
-      "id": "50e9",
-      "nome": "Bloodborne",
-      "preco": 200,
-      "qtd": 1
-    }
-  ]
+  "carrinho": []
 }
