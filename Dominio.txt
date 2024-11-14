@@ -1,0 +1,19 @@
+DOMÍNIO:
+
+Faremos um site para uma loja de jogos de videogame. Esse site irá exibir os produtos disponíveis para venda no
+devido momento e permitirá que o usuário efetue uma compra. Para isso criaremos um carrinho de compras, assim como
+quase todo site de vendas possui.
+
+O site possuirá uma página inicial (homepage), uma página que exibirá os jogos disponíveis para venda (nossos produtos)
+e uma página para a conclusão da venda (carrinho).
+
+A página inicial conterá informações gerais sobre a loja. 
+
+A página "nossos produtos" exibirá através de cards os jogos disponíveis para venda. Cada card conterá um botão chamado
+"adicionar ao carrinho", que permitirá que o usuário adicione o jogo ou os jogos que ele queira no carrinho de compras.
+
+A página "carrinho de compras" será a etapa final da venda. Nela o usuário poderá ver todos os jogos presentes no seu
+carrinho de compras. Além disso, poderá alterar a quantidade de cada um dos produtos (seja adicionando ou removendo).
+Ao final da página haverão dois botões: finalizar compra e continuar comprando. O primeiro, ao ser pressionado, finalizará
+a compra do usuário, gerando um boleto bancário e uma mensagem de sucesso. O botão "continuar comprando", ao ser pressionado,
+fará com que o usuário retorne ao carrinho para que adicione ou remova produtos do seu carrinho.
