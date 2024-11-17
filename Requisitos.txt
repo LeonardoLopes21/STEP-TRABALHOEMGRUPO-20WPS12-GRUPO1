@@ -1,0 +1,24 @@
+REQUISITOS:
+
+Todas as páginas do site irão possuir um navbar com as devidas rotas para uma fácil navegação, além de um footer com in-
+-formações das nossas redes sociais.
+
+Homepage: conterá informações gerais sobre a loja.
+
+Nossos Produtos: apresentará, através de cards, os jogos disponíveis na loja. Um jogo será composto de alguns atributos,
+, os quais seguem: um número identificador único (ID), o nome do jogo, o preço em reais (R$), o gênero do jogo (ação, RPG)
+e uma breve descrição. Com exceção do ID todos esses atributos constarão no card específico de cada game, juntamente com 
+a foto da capa do jogo. Além disso, cada card contará com um botão chamado "adicionar ao carrinho". Ao clicar neste botão,
+, o usuário estará adicionando uma unidade do jogo ao carrinho de compras. Cada clique no botão adiciona uma unidade ao
+carrinho.
+
+Carrinho de Compras: essa página conterá uma tabela com os jogos que foram adicionados ao carrinho a partir da página "Nos-
+-sos Produtos". Para cada jogo serão apresentadas as seguintes informações: nome do jogo, quantidade presente no carrinho
+e preço total desse determinado jogo (qtd jogo A * preço jogo A). Ao lado de cada jogo haverão dois botões: "+" e "-". 
+Ao clicar no botão "+" será acrescida uma unidade do jogo em questão ao carrinho. Já ao clicar no botão "-" o raciocínio
+é o inverso: será retirada uma unidade do jogo. O objetivo destes botões é permitir uma edição da venda dentro do próprio
+carrinho de compras, sem precisar retornar à página "Nossos Produtos". Ao final da tabela, além do valor total da compra do
+usuário (Ex: (qtd jogo A * preço jogo A) + (qtd jogo B * preço jogo B)) haverão dois botões: Finalizar Compra e Continuar
+Comprando. O primeiro irá confirmar a compra, gerará um boleto e uma mensagem de sucesso, além de redirecionar o usuário
+à Homepage. O segundo, ao ser pressionado, levará o usuário novamente ao carrinho de compras para que ele continue
+efetuando a sua compra.
